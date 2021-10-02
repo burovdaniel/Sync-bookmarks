@@ -24,3 +24,9 @@ def URL(ss,es):
 		i+=1
 	return url
 
+Bookurl=[]
+j=0
+while j < len(folder):
+	Bookurl.append(URL(folder[j],markers[j]))
+	j+=1
+print(Bookurl)
