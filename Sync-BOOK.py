@@ -31,6 +31,7 @@ while j < len(folder):
 	Bookurl.append(URL(folder[j],markers[j]))
 	j+=1
 
+#adds urls in bookurl to urls.txt
 textfile=open('urls.txt','w')
 for i in Bookurl:
 	for j in i:
