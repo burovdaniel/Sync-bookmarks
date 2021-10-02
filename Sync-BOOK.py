@@ -13,4 +13,14 @@ while i < len(lines):
 	if lines[i] == lines[46]:
 		markers.append(i)	
 	i+=1
-print(markers)
+
+#Function outputs urls in a given range
+def URL(ss,es):
+	url=[]
+	i=ss
+	while i <= es:
+		if lines[i] == lines[24]:
+			url.append(lines[i+1])
+		i+=1
+	return url
+
