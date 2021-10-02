@@ -24,9 +24,15 @@ def URL(ss,es):
 		i+=1
 	return url
 
+#addes urls to bookurl
 Bookurl=[]
 j=0
 while j < len(folder):
 	Bookurl.append(URL(folder[j],markers[j]))
 	j+=1
-print(Bookurl)
+
+textfile=open('urls.txt','w')
+for i in Bookurl:
+	for j in i:
+		textfile.write(j)
+textfile.close()
